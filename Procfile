@@ -1,0 +1,1 @@
+web: npx hardhat node
