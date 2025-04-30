@@ -20,4 +20,4 @@ EXPOSE 8545
 HEALTHCHECK CMD curl --fail http://localhost:8545 || exit 1
 
 # Ejecuta el nodo
-CMD ["npx", "hardhat", "node", "--hostname", "0.0.0.0", "--port", "8545"]
+CMD ["sh", "-c", "npx hardhat node --hostname 0.0.0.0 --port 8545"]
