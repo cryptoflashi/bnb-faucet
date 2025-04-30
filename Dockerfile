@@ -16,5 +16,5 @@ COPY . .
 # Expone el puerto 8545 para JSON-RPC
 EXPOSE 8545
 
-# Comando que ejecuta Hardhat node
-CMD ["npx", "hardhat", "node", "--hostname", "0.0.0.0"]
+# Comando que ejecuta Hardhat node (modo público y con puerto explícito)
+CMD ["npx", "hardhat", "node", "--hostname", "0.0.0.0", "--port", "8545"]
